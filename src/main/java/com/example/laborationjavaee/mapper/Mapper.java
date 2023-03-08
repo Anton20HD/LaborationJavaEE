@@ -1,8 +1,7 @@
 package com.example.laborationjavaee.mapper;
 
 
-import com.example.laborationjavaee.dto.MovieDTO;
-import com.example.laborationjavaee.entity.Movie;
+import com.example.laborationjavaee.Movie.Movie;
 import jakarta.enterprise.context.ApplicationScoped;
 
 import java.util.List;

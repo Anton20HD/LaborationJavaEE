@@ -1,4 +1,4 @@
-package com.example.laborationjavaee.validate;
+package com.example.laborationjavaee.resource;
 
 import jakarta.ws.rs.ApplicationPath;
 import jakarta.ws.rs.core.Application;

@@ -1,6 +1,6 @@
-package com.example.laborationjavaee.dto;
+package com.example.laborationjavaee.mapper;
 
-import com.example.laborationjavaee.entity.Movie;
+import com.example.laborationjavaee.Movie.Movie;
 
 public class MovieDTO {
 

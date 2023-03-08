@@ -1,14 +1,8 @@
-package com.example.laborationjavaee.controller;
+package com.example.laborationjavaee.Movie;
 
-import com.example.laborationjavaee.dto.MovieDTO;
-import com.example.laborationjavaee.entity.Movie;
 import com.example.laborationjavaee.exception.ExceptionForID;
 import com.example.laborationjavaee.mapper.Mapper;
-import com.example.laborationjavaee.repository.MovieRepository;
-import io.swagger.v3.oas.annotations.media.Content;
-import io.swagger.v3.oas.annotations.media.Schema;
-import io.swagger.v3.oas.annotations.responses.ApiResponse;
-import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import com.example.laborationjavaee.mapper.MovieDTO;
 import jakarta.inject.Inject;
 import jakarta.validation.Valid;
 import jakarta.ws.rs.*;
@@ -32,7 +26,7 @@ import java.util.Optional;
         @GET
         @Produces(MediaType.APPLICATION_JSON)
         public List<MovieDTO> getAll(@QueryParam("name") Optional<String> name) {
-            List<Movie> movies = name.map(movieRepository::findAllByName).orElse(movieRepository.findAll());
+            List<Movie> movies = name.map(movieRepository::findByName).orElse(movieRepository.findAll());
             return mapper.map(movies);
         }
 

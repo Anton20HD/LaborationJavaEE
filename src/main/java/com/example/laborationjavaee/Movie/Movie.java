@@ -1,4 +1,4 @@
-package com.example.laborationjavaee.entity;
+package com.example.laborationjavaee.Movie;
 
 
 import jakarta.persistence.*;
@@ -21,6 +21,18 @@ public class Movie {
     @NotNull(message = "Name cant be null")
     @Size(min = 5)
     String category;
+
+    public Movie() {
+
+
+    }
+
+    public Movie(Long id, String name, String category) {
+        this.id = id;
+        this.name = name;
+        this.category = category;
+
+    }
 
     public String getCategory() {
         return category;

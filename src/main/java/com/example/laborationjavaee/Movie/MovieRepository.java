@@ -1,7 +1,6 @@
-package com.example.laborationjavaee.repository;
+package com.example.laborationjavaee.Movie;
 
-import com.example.laborationjavaee.dto.MovieDTO;
-import com.example.laborationjavaee.entity.Movie;
+import com.example.laborationjavaee.mapper.MovieDTO;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
@@ -46,7 +45,7 @@ public class MovieRepository {
 
     }
 
-    public List<Movie> findAllByName(String name) {
+    public List<Movie> findByName(String name) {
         var query = entityManager.createQuery("SELECT m FROM Movie m WHERE m.name like :name");
         query.setParameter("name",name);
         return (List<Movie>) query.getResultList();

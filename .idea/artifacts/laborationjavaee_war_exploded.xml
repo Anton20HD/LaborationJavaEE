@@ -35,6 +35,8 @@
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.jakarta.rs:jackson-jakarta-rs-json-provider:2.14.0" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.jakarta.rs:jackson-jakarta-rs-base:2.14.0" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.module:jackson-module-jakarta-xmlbind-annotations:2.14.0" />
+          <element id="library" level="project" name="Maven: net.bytebuddy:byte-buddy:1.12.22" />
+          <element id="library" level="project" name="Maven: org.assertj:assertj-core:3.24.2" />
         </element>
       </element>
       <element id="directory" name="META-INF">
